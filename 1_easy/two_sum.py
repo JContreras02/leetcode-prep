@@ -5,11 +5,13 @@
 #             if nums[i] + nums[j] == target:
 #                 return [i, j]
 
+# O(n) time complexity
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         
         tracker = {}
 
+        # i index, n value of list
         for i, n in enumerate(nums):
             diff = target - n
             if diff in tracker:
