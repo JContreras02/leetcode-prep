@@ -8,7 +8,37 @@
 # O(n) time complexity
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        
+
+        hashmap = {}
+
+        for i, num in enumerate(nums):
+            diff =  target - num
+            if diff in hashmap:
+                return [hashmap[diff], i]
+            hashmap[num] = i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
         tracker = {}
 
         # i index, n value of list
@@ -18,3 +48,7 @@ class Solution:
                 return [tracker[diff], i]
             tracker[n] = i
 
+
+
+
+"""
